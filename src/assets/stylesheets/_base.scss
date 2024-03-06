@@ -29,6 +29,16 @@ nav {
   // transition smooth
   transition: 1s ease;
 }
+
+a {
+  text-decoration: none;
+  color: $color-secondary;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+  &:hover {
+    color: $color-primary;
+  }
+}
 .navbarUl {
   display: grid;
   z-index: 100;
