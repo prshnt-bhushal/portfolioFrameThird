@@ -1,0 +1,60 @@
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 70vh;
+  .profileImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .profileDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+  .socialHandles {
+    display: flex;
+    gap: 10px;
+  }
+  .cvButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: $color-primary;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-self: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: inherits;
+    &:hover {
+      background-color: $color-secondary;
+    }
+
+    .FaFileDownload {
+      color: $color-text;
+      background-color: inherit;
+    }
+
+    .dowloadText {
+      font-weight: 500;
+      color: $color-text;
+      background-color: inherit;
+    }
+  }
+}
