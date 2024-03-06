@@ -52,7 +52,14 @@ function NavBar() {
         </li>
       </ul>
       {visible && (
-        <FaRegEye style={{ cursor: 'pointer' }} onClick={handleVisibility} />
+        <FaRegEye
+          size={20}
+          style={{
+            cursor: 'pointer',
+            margin: '10px',
+          }}
+          onClick={handleVisibility}
+        />
       )}
     </nav>
   );
